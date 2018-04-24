@@ -1,0 +1,157 @@
+* {
+    font-family: 'Poppins';
+}
+
+html {
+    background-color: black;
+}
+
+
+/*Color contenedor principal*/
+
+#cont {
+    background-color: beige;
+} 
+
+
+/*Estilos del slider*/
+
+.carousel-inner {
+    border-radius: 20px 0 20px 0;
+       border: 5px ridge;
+}
+
+.carousel-inner img {
+    position: relative;
+    min-width: 100%;
+    height: 32rem;
+}  
+
+
+/*Cambio de color de los títulos del slider*/
+
+.carousel-caption>h1,
+.sub {
+    color: black;
+}
+
+
+/*Estilos de los contenedores de camisetas*/
+
+.col-md-4 {
+    transition: 1s linear;
+}
+
+.col-md-4:hover {
+    transform: scale(1.05);
+    transition: 1.2s ease;
+}
+
+.col-md-4>div {
+    border: 1px solid;
+}
+
+.card-body {
+    border-top: 1px solid;
+}
+
+
+/*Quito los estilos anteriores en determinadas paginas*/
+
+#product .col-md-4>div {
+    border: 0;
+}
+
+#product .card-body {
+    border-top: 0;
+}
+
+#product .col-md-4:hover {
+    transform: scale(1);
+}
+
+#resumen-compra:hover {
+    transform: scale(1);
+}
+
+
+/*Estilos del registro. Selector de los elementos que se situarán en el centro de la pantalla*/
+
+.principal {
+    background-color: white;
+    opacity: 0.9;
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid grey;
+    border-radius: 40px;
+}
+
+
+/*Icono*/
+
+#logo {
+    width: 150px;
+    height: 150px;
+}
+
+
+/*Selector que ajusta los inputs, los labels y el botón */
+
+.entrada {
+    display: block;
+    margin: auto;
+    width: 65%;
+    font-size: 14px;
+}
+
+
+/*Ajusta solamente los inputs*/
+
+.entrada {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+
+/*Selector que ajusta los iconos*/
+
+i {
+    margin-left: 52px;
+    position: absolute;
+    margin-top: 5px;
+}
+
+
+/*Situa los labels*/
+
+.entrada:focus {
+    outline: inherit;
+}
+
+#pago_paypal {
+    display: none;
+}
+
+
+/*Estilos del footer*/
+
+.abajo {
+    background-color: black;
+}
+
+@media only screen and (max-width:1024px) {
+    #myCarousel {
+        display: none;
+    }
+
+    .iconos {
+        visibility: hidden;
+    }
+
+    #logo {
+        display: none !important;
+    }
+}
